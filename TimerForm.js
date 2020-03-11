@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, StyleSheet, TextInput } from "react-native";
 import TimerButton from "./TimerButton";
 
 const TimerForm = ({ id, title, project }) => {
+  const [estado, setEstado] = useState({
+    title: id ? title : "",
+    project: id ? project : ""
+  });
+
+  const handleTitleChange = title => setEstado({ title });
+  const handleProjectChange = project => setEstado({ project });
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    console.log("hicistes click en en create");
+  };
+
+  const handleFormClose = e => {
+    e.preventDefault();
+    console.log("hicistes click en cancel");
+  };
+
   const submitText = id ? "Updtated" : "Create";
+
   return (
     <View style={styles.formContainer}>
       <View style={styles.attributeContainer}>
@@ -12,7 +31,8 @@ const TimerForm = ({ id, title, project }) => {
           <TextInput
             style={styles.textInput}
             underlineColorAndroid="transparent"
-            defaultValue={title}
+            value={estado.title}
+            onChangeText={handleTitleChange}
           />
         </View>
       </View>
@@ -22,13 +42,24 @@ const TimerForm = ({ id, title, project }) => {
           <TextInput
             style={styles.textInput}
             underlineColorAndroid="transparent"
-            defaultValue={project}
+            value={estado.project}
+            onChangeText={handleProjectChange}
           />
         </View>
       </View>
       <View style={styles.buttonGroup}>
-        <TimerButton small color="#21BA45" title={submitText} />
-        <TimerButton small color="#DB2828" title="Cancel" />
+        <TimerButton
+          small
+          color="#21BA45"
+          title={submitText}
+          onPress={handleSubmit}
+        />
+        <TimerButton
+          small
+          color="#DB2828"
+          title="Cancel"
+          onPress={handleFormClose}
+        />
       </View>
     </View>
   );
