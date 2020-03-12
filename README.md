@@ -4,8 +4,6 @@ _Aplicación realizada en Expo React Native de un Cronómetro Personal tipo Pomo
 
 ### Instalación 🔧
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
 Una vez clonado se pueden instalar las dependencias de la siguiente forma.
 
 ```
