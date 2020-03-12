@@ -1,26 +1,26 @@
-# Aplicación  Móvil de un Blog
+# Aplicación Móvil de un Timer tipo pomodore
 
-_Aplicación realizada en Expo React Native de un Cronómetro Personal tipo Pomodore
+\_Aplicación realizada en Expo React Native de un Cronómetro Personal tipo Pomodore
 
 ### Instalación 🔧
 
 Una vez clonado se pueden instalar las dependencias de la siguiente forma.
 
 ```
-Yarn install o NPM install 
+Yarn install o NPM install
 ```
+
 y
+
 ```
 Yarn start o NPM start
 ```
 
 ## Construido con 🛠️
 
-
-* [Expo](http://Expo.io) - Framework
-* [Yarn](https://yarnpkg.com/) - Manejador de dependencias
-* [NOX](https://es.bignox.com/)  Simulador
-
+- [Expo](http://Expo.io) - Framework
+- [Yarn](https://yarnpkg.com/) - Manejador de dependencias
+- [NOX](https://es.bignox.com/) Simulador
 
 ## Preview 📌
 
@@ -29,12 +29,8 @@ Yarn start o NPM start
 
 ## Autores ✒️
 
-
-* **Gabriel Paez** - *Trabajo Inicial* - [GABPAEZ](https://github.com/GabPaez)
-
+- **Gabriel Paez** - _Trabajo Inicial_ - [GABPAEZ](https://github.com/GabPaez)
 
 ## Licencia 📄
 
 Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-
